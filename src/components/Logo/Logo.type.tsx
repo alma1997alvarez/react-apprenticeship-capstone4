@@ -1,5 +1,5 @@
 interface ILogo {
-    fontSize?: string;
-}; 
+  fontSize?: string;
+}
 
-export type {ILogo};
+export type { ILogo };
