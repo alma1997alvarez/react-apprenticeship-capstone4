@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: #ffcbc4;
+  color: #ffa7a6;
 `;
 
 export { StyledFooter };

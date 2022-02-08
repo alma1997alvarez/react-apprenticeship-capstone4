@@ -5,10 +5,10 @@ import { ILogo } from "./Logo.type";
 const { innerWidth: width, innerHeight: height } = window;
 
 const getTitle = () => {
-  if (innerWidth < 750) {
+  if (innerWidth < 780) {
     return "P&M";
   } else {
-    return "Peaches & Mangos";
+    return "Peaches & Mangoes";
   }
 };
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const SearchbarInput = styled.input`
     margin:10px;
-    padding:5px;
+    padding:5px 15px;
     font-family: 'Montserrat';
     color: #1f1f1f;
     background: #fff;
