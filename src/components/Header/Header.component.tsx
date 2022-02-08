@@ -5,7 +5,7 @@ import Searchbar from '../Searchbar/Searchbar.component';
 import ShoppingCartIcon from '../ShoppingCartIcon/ShoppingCartIcon.component'
 const Header: React.FC = () => {
     return <StyledHeader>
-        <Logo />
+        <Logo fontSize="2rem"/>
         <Searchbar />
         <ShoppingCartIcon />
         </StyledHeader>

@@ -1,5 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { StyledLogo } from './Logo.styled'
+import {ILogo} from './Logo.type';
+
+const { innerWidth: width, innerHeight: height } = window;
 
 const getTitle = () => {
     if (innerWidth < 750){
@@ -9,8 +12,7 @@ const getTitle = () => {
     }
   }
 
-const Logo: React.FC = () => {
-    const { innerWidth: width, innerHeight: height } = window;
+const Logo: React.FC<ILogo> = ({fontSize}) => {
     const [logoText, setLogoText] = useState(getTitle());
 
     useEffect(() => {
@@ -23,7 +25,7 @@ const Logo: React.FC = () => {
         return () => window.removeEventListener('resize', handleResize);
       }, []);
 
-    return <StyledLogo>{logoText}</StyledLogo>
+    return <StyledLogo fontSize={fontSize}>{logoText}</StyledLogo>
 }
 
 export default Logo;
